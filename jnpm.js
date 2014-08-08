@@ -39,15 +39,20 @@ function doSetup() {
     console.log('Will write ' + file);
 
     function modifyFile(body) {
-        var hook = path.join(path.dirname(module.filename), 'hook.js');
+        var hook = path.join(path.dirname(module.filename), 'hook');
         var scriptLine = 'onload-script=' + hook + '\n';
         if (body) {
-            if (/onload-script\s?=\s?.*$/.test(body)) {
-                body = body.replace(/onload-script\s?=\s?.*$/, scriptLine);
+            console.log('BODY ' + body)
+            var rex = /onload\-script\=.*/g;
+            if (rex.test(body)) {
+                console.log('Replacing line')
+                body = body.replace(rex, scriptLine);
             } else {
                 body = body + '\n' + scriptLine;
+                console.log('Appending line')
             }
         } else {
+            console.log('Creating new file');
             body = scriptLine;
         }
         fs.writeFile(file, body, {encoding: 'utf8'}, function (err) {

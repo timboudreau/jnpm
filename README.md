@@ -30,9 +30,11 @@ For example:
       "repositories" : ["http://timboudreau.com/builds/plugin/repository/everything/"]
     }
 
-My purpose in writing it is to extend the NetBeans NodeJS plugin able to easily
-run NodeJS applications in AvatarJS when the project uses Java libraries.  And
-doing it through npm, utilizing the native project metadata of a NodeJS project
+My purpose in writing it is to extend the [NetBeans NodeJS plugin](https://github.com/timboudreau/nb-nodejs) to easily
+run NodeJS applications in AvatarJS and let those projects use Java libraries.  And to do it
+in a non-NetBeans specific way that could work on the command-line or with any other IDE.
+
+Doing it through npm, utilizing the native project metadata of a NodeJS project
 is the right way to do it (there is a plugin already that will run AvatarJS stuff
 with Ant, but the projects aren't set up well for native NodeJS and using Ant to
 run NodeJS code is just weird).

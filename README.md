@@ -6,7 +6,7 @@ to download Java libraries.
 
 ### Purpose
 
-AvatarJS supports running NodeJS code inside a Java VM.  Naturally people will
+AvatarJS supports running [NodeJS](http://nodejs.org) code inside a Java VM.  Naturally people will
 want to use Java libraries as well.  In order to do that, there needs to be a 
 way for a NodeJS project (a normal one with a `package.json`) to specify what
 libraries it uses.
@@ -63,6 +63,12 @@ dependencies and get those too, just as npm does
 You still need to run AvatarJS, and pass the right things on the classpath.
 Probably some provision can be made for generating a launch script down the 
 road.
+
+### Requirements
+
+You need to have [Apache Maven](http://maven.apache.org) installed and on the `PATH`;
+it is assumed you have [NodeJS](http://nodejs.org) and [NPM](http://npmjs.org) which
+comes with most distros of it.
 
 ### Status
 

@@ -1,0 +1,21 @@
+{
+    "name": "jnpm",
+    "description": "",
+    "version": "0.0.1",
+    "main": "./jnpm.js",
+    "author": {
+        "name": "Tim Boudreau",
+        "email": "niftiness@gmail.com"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "none"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/timboudreau/jnpm.git"
+    },
+    "bugs": {
+        "url": "http://github.com/timboudreau/jnpm/issues"
+    }
+}

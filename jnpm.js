@@ -42,7 +42,11 @@ function doSetup() {
         var hook = path.join(path.dirname(module.filename), 'hook.js');
         var scriptLine = 'onload-script=' + hook + '\n';
         if (body) {
-            body = body.replace(/onload-script\s?=\s?.*$/, scriptLine);
+            if (/onload-script\s?=\s?.*$/.test(body)) {
+                body = body.replace(/onload-script\s?=\s?.*$/, scriptLine);
+            } else {
+                body = body + '\n' + scriptLine;
+            }
         } else {
             body = scriptLine;
         }

@@ -35,7 +35,8 @@ run NodeJS applications in AvatarJS and let those projects use Java libraries.  
 in a non-NetBeans specific way that could work on the command-line or with any other IDE.
 
 Doing it through npm, utilizing the native project metadata of a NodeJS project
-is the right way to do it, and should work for everyone.  A nice little cross-platform launch
+is the right way to do it, and should work for everyone.  All that's needed to 
+complement it is a nice little cross-platform launch
 script for AvatarJS that understands the structure of a Maven repo, and it can work
 for everyone, no IDE needed (there is a plugin already that will run AvatarJS stuff
 with Ant, but that's a little like riding a motorcycle by tying a rope to a tank and

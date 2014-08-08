@@ -21,7 +21,7 @@ properties to it.  So, we add the following:
     * `repositories` - array of string URLs to repositories to search
     * `dependencies` - array of either
         * A string designation such as Maven uses on the command-line, e.g. `$GROUP_ID:$ARTIFACT_ID:$VERSION`, or
-        * A hash of `{ groupId : '...', artifactId : '...', version : '...' }
+        * A hash of `{ groupId : '...', artifactId : '...', version : '...' }`
 
 For example:
 

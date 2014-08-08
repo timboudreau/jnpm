@@ -24,6 +24,7 @@ properties to it.  So, we add the following:
         * A hash of `{ groupId : '...', artifactId : '...', version : '...' }
 
 For example:
+
         "java" : {
             "dependencies" : ["com.mastfrog:giulius:1.4.17"],
             "repositories" : ["http://timboudreau.com/builds/plugin/repository/everything/"]

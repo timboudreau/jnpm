@@ -25,10 +25,10 @@ properties to it.  So, we add the following:
 
 For example:
 
-        "java" : {
-            "dependencies" : ["com.mastfrog:giulius:1.4.17"],
-            "repositories" : ["http://timboudreau.com/builds/plugin/repository/everything/"]
-        }
+    "java" : {
+      "dependencies" : ["com.mastfrog:giulius:1.4.17"],
+      "repositories" : ["http://timboudreau.com/builds/plugin/repository/everything/"]
+    }
 
 My purpose in writing it is to extend the NetBeans NodeJS plugin able to easily
 run NodeJS applications in AvatarJS when the project uses Java libraries.  And
